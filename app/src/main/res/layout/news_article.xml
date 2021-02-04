@@ -17,17 +17,21 @@
             <ImageView
                 android:id="@+id/newsImage"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/ic_launcher_background"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"/>
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
 
             <TextView
                 android:id="@+id/newsAuthor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:layout_alignParentBottom="true"
-                android:text="X News" />
+                android:text="X News"
+                android:textColor="@color/white"
+                android:padding="10sp"
+                android:background="#33000000"
+                android:textSize="14sp"/>
 
         </RelativeLayout>
 
@@ -36,14 +40,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/newsImageView"
-            android:text="Sample Title"/>
+            android:textStyle="italic"
+            android:text="Sample Title"
+            android:padding="10sp"
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/newsPublishedAt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/newsTitle"
-            android:text="datetime" />
+            android:text="datetime"
+            android:textSize="12sp"/>
 
     </RelativeLayout>
 

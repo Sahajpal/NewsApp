@@ -11,7 +11,7 @@ object RetrofitClient {
     get(){
         if(ourInstance == null)
             ourInstance = Retrofit.Builder()
-                .baseUrl("https://newsapi.org/v2/top-headlines")
+                .baseUrl("https://newsapi.org/v2/top-headlines/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build()

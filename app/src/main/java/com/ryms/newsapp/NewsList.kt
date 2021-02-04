@@ -35,7 +35,7 @@ class NewsList : Fragment() {
 
         news_recyclerview = itemView.findViewById<RecyclerView>(R.id.news_recyclerview)
         news_recyclerview.setHasFixedSize(true)
-        news_recyclerview.layoutManager = GridLayoutManager(activity, 2)
+        news_recyclerview.layoutManager = GridLayoutManager(activity, 1)
         val itemDecoration = ItemOffsetDecoration(activity!!, R.dimen.spacing)
         news_recyclerview.addItemDecoration(itemDecoration)
 

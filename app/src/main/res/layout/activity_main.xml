@@ -10,7 +10,7 @@
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.ryms.newsapp.NewsList"
+        class="com.ryms.newsapp.NewsList"
         android:id="@+id/news_list_fragment">
     </fragment>
 
