@@ -18,6 +18,6 @@ class News {
     var description: String ?= null
     var url: String ?= null
     var urlToImage: String ?= null
-    var DateTime: Date ?= null
+    var publishedAt: Date ?= null
     var content: String ?= null
 }
